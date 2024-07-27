@@ -1,0 +1,228 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.principal {
+    height: 100vh;
+    width: 100vw;
+}
+
+.esquerdo {
+    display: inline-block;
+    width: 60%;
+    margin-top: 14%;
+    padding: 136px;
+}
+
+.direito {
+    display: inline-block;
+    background: rgba(93, 93, 125, 0.16);
+    height: 100vh;
+    width: 40%;
+    position: absolute;
+}
+
+img {
+    position: relative;
+    top: 25%;
+    right: 150px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 80px;
+    text-align: left;
+    color: rgba(93, 93, 125, 1);
+    width: 368px;
+}
+
+p {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    color: rgba(93, 93, 125, 1);
+    opacity: 0.6;
+    margin: 15px 0;
+    width: 540px;
+}
+
+button {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35.57px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    width: 269px;
+    height: 62px;
+    background: rgba(148, 153, 234, 1);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+a {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 41.5px;
+    text-align: left;
+    color: rgba(93, 93, 125, 1);
+    margin-right: 41px;
+    text-decoration: none;
+}
+
+a:nth-child(2) {
+    opacity: 0.4;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+a:active {
+    opacity: 0.9;
+}
+
+header {
+    margin: 10px 0 0 57px;
+}
+
+@media screen and (max-width: 900px) {
+    .esquerdo {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        padding: 20px; /* Ajuste o padding conforme necessário */
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+    }
+
+    .direito {
+        width: 100%;
+        height: auto;
+        position: static;
+        padding: 20px; /* Ajuste o padding conforme necessário */
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    img {
+        top: 0;
+        right: 0;
+        width: 100%; /* Ajuste a largura da imagem conforme necessário */
+        height: auto; /* Ajuste a altura da imagem conforme necessário */
+        position: relative;
+
+    }
+
+    h1 {
+        font-size: 40px; /* Ajuste o tamanho da fonte conforme necessário */
+        line-height: 52px; /* Ajuste a altura da linha conforme necessário */
+        width: auto; /* Ajuste a largura conforme necessário */
+        align-items: center;
+        margin: 58px 50px 0 50px;
+        justify-content: center;
+        display: block;
+       
+    }
+
+    p {
+        font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+        line-height: 24px; /* Ajuste a altura da linha conforme necessário */
+        width: auto; /* Ajuste a largura conforme necessário */
+        align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button {
+        font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+        width: 200px; /* Ajuste a largura do botão conforme necessário */
+        height: 50px; /* Ajuste a altura do botão conforme necessário */
+        align-items: center;
+    }
+
+    header {
+        margin: 10px 0;
+        display: flex;
+        justify-content: center; /* Centraliza o conteúdo do header */
+    }
+
+    a {
+        font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+        margin-right: 20px; /* Ajuste a margem entre os links conforme necessário */
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .principal {
+        display: block; /* Garantir que os elementos filhos fiquem um abaixo do outro */
+        height: auto;
+        padding: 10px; /* Adicionar padding para evitar que os elementos toquem as bordas da tela */
+    }
+
+    .esquerdo, .direito {
+        width: 100%; /* Os dois elementos ocupam 100% da largura da tela */
+        margin: 0;
+        padding: 10px; /* Ajustar padding para evitar que os elementos toquem as bordas da tela */
+        display: block; /* Alinhar os elementos em coluna */
+        position: relative; /* Remover o posicionamento absoluto */
+    }
+
+    img {
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 40px; /* Ajustar tamanho da fonte para caber em telas menores */
+        line-height: 50px;
+        width: auto;
+    }
+
+    p {
+        font-size: 16px; /* Ajustar tamanho da fonte para caber em telas menores */
+        line-height: 24px;
+        width: auto;
+    }
+
+    button {
+        font-size: 16px; /* Ajustar tamanho da fonte para caber em telas menores */
+        width: 150px; /* Ajustar largura do botão para caber em telas menores */
+        height: 40px; /* Ajustar altura do botão para caber em telas menores */
+    }
+
+    header {
+        margin: 10px 0;
+        display: block; /* Garantir que os links do header fiquem um abaixo do outro */
+        text-align: center; /* Centralizar os links do header */
+    }
+
+    a {
+        font-size: 16px; /* Ajustar tamanho da fonte para caber em telas menores */
+        margin-right: 10px; /* Ajustar margem entre os links */
+        display: block; /* Garantir que os links fiquem um abaixo do outro */
+    }
+}
