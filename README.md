@@ -12,5 +12,5 @@ A página contém uma breve descrição do serviço, um botão de chamada para a
 - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css)
 
 
-![Descrição da imagem](img/foto-projeto-easy-shopping)
+![Descrição da imagem](img/foto-projeto-easy-shopping.png)
 
